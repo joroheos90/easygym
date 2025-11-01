@@ -1,4 +1,4 @@
-Django=4.2.2          # LTS line, safe on Render
+Django>=4.2,<4.3          # LTS line, safe on Render
 gunicorn>=21.2            # WSGI server
 whitenoise>=6.6           # Serve static files
 dj-database-url>=2.2 
