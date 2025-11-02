@@ -18,6 +18,23 @@
         </style>
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        <div class="flex min-h-screen w-full flex-col bg-gray-50">
+            {% block header %}
+            <div
+                id="header"
+                class="relative flex flex-row items-center justify-center p-4 text-lg font-semibold"
+            >
+                <span>{% block headerTitle %}Titulo{% endblock %}</span>
+                <div class="absolute top-4 right-4 left-4 flex justify-between">
+                    {% block headerButtons %}{% endblock%}
+                </div>
+            </div>
+            {% endblock %}
+            <div id="body">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        {% endblock %}
     </body>
 </html>

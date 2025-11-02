@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, "app/hourselection.html")
+    return render(request, "app/home.html")
 
 
 def selector(request):
