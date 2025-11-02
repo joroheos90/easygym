@@ -7,4 +7,5 @@ urlpatterns = [
     path("selector", views.selector, name="app.selector"),
     path("hours", views.hours, name="app.hours"),
     path("profile", views.profile, name="app.profile"),
+    path("edit", views.edit, name="app.edit"),
 ]

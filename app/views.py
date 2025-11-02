@@ -4,14 +4,17 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, "hourselection.html")
+    return render(request, "app/hourselection.html")
 
 
 def selector(request):
-    return render(request, "hourselection.html")
+    return render(request, "app/hourselection.html")
 
 def profile(request):
-    return render(request, "profile.html")
+    return render(request, "app/profile.html")
 
 def hours(request):
-    return render(request, "hours.html")
+    return render(request, "app/hours.html")
+
+def edit(request):
+    return render(request, "app/editprofile.html")
